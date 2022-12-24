@@ -1,8 +1,9 @@
- from flask import Flask
- app = Flask(__name__)
+from flask import Flask
+import pygame, sys, random
 
- @app.route('/')
- import pygame, sys, random
+app = Flask(__name__)
+
+@app.route('/')
 #Create the functions for game (tạo các hàm cho trò chơi)
 #Create the function draw floor (tạo ra hàm vẽ cửa sổ trò chơi)
 def draw_floor():
